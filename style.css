@@ -1,0 +1,87 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.wrapper {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('group1.jpg');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+
+
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 60% auto;
+  grid-gap: 10px;
+  grid-template-areas:
+      "h"
+      "s"
+      "f";
+}
+
+.header {
+  grid-area: h;
+  padding: ;
+  text-align: center;
+  color: white;
+}
+
+.side_panel {
+  grid-area: s;
+  margin-bottom: 10px;
+  width: 25%;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+  letter-spacing: 1.5px;
+  background-color: rgba(255, 102, 51, 0.5);
+}
+
+.side_panel img {
+  width: 100%;
+  height: auto;
+  padding: px 0 10px;
+  border: 5px solid black;
+}
+
+#name {
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-family: monospace;
+}
+
+.fslide_show {
+  width: 100%;
+  grid-area: f;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+  background-color: black;
+}
+
+.fslide_show img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.fslide_show img:hover {
+  opacity: 0.3;
+}
+
+.fslide_show i {
+  color: white;
+}
+
+#buttons i {
+  font-size: 40px;
+}
